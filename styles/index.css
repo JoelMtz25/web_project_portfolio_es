@@ -1,0 +1,379 @@
+@font-face {
+  font-family: "Archivo Black";
+  src:
+    url("fonts/fonts/ArchivoBlack-Regular.woff2") format("woff2"),
+    url("fonts/fonts/ArchivoBlack-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src:
+    url("fonts/fonts/OpenSans-Regular.woff2") format("woff2"),
+    url("fonts/fonts/OpenSans-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src:
+    url("fonts/fonts/OpenSans-Bold.woff2") format("woff2"),
+    url("fonts/fonts/OpenSans-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src:
+    url("fonts/fonts/OpenSans-SemiBold.woff2") format("woff2"),
+    url("fonts/fonts/OpenSans-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.perfil {
+  display: flex;
+  background: radial-gradient(
+    circle at 75% 50%,
+    rgba(109, 109, 255, 0.25) 0%,
+    transparent 30%
+  );
+  gap: 20px;
+}
+.perfil__fotopersonal {
+  max-width: 387px;
+  max-height: 500px;
+  margin-top: 40px;
+}
+.perfil__texto {
+  padding-top: 89px;
+}
+.proyectos__tarjetas--descripcion {
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5;
+}
+.perfil__descripcion-perfil {
+  margin-bottom: 30px;
+}
+.perfil__nombre {
+  font-family: "Archivo Black";
+  font-size: 72px;
+  margin-bottom: 15px;
+}
+.perfil__puesto-lenguajes {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 30px;
+}
+.perfil__navegacion {
+  display: flex;
+  gap: 30px;
+}
+.perfil__navegacion--link {
+  text-decoration: none;
+  color: #ffffff;
+  padding-bottom: 10px;
+  background-image: linear-gradient(90deg, #4c1a97, #6d6dff);
+  background-size: 100% 5px;
+  background-position: bottom left;
+  background-repeat: no-repeat;
+}
+.habilidades__container {
+  display: flex;
+  gap: 180px;
+}
+.habilidades__titulo {
+  margin-top: 110px;
+  margin-bottom: 50px;
+}
+.proyectos__container {
+  display: flex;
+  gap: 20px;
+}
+.proyectos__titulo {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+.proyectos__tarjetas {
+  max-width: 590px;
+  background-color: #1c1c1c;
+  display: flex;
+  flex-direction: column;
+}
+.proyectos__tarjetas--imagen-portada {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  display: block;
+}
+.proyectos__tarjetas__velo {
+  position: relative;
+}
+.proyectos__tarjetas__veloiconos {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  display: flex;
+  gap: 8px;
+}
+.proyectos__tarjetas--icono {
+  width: 40px;
+  height: 40px;
+}
+.proyectos__tarjetas__velo-degradado {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.7));
+}
+.proyectos__tarjetas__info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-between;
+  padding: 30px;
+}
+.proyectos__tarjetas__links {
+  display: flex;
+  gap: 20px;
+}
+.proyectos__tarjetas--demo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #6d6dff;
+}
+.proyectos__tarjetas--titulo {
+  margin-bottom: 20px;
+}
+.contacto {
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgba(109, 109, 255, 0.3) 0%,
+    transparent 60%
+  );
+  background-color: #1e1e1e;
+  padding: 100px 0;
+  text-align: center;
+}
+.contacto__iconos {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 80px;
+}
+.contacto__correo {
+  color: #6d6dff;
+  cursor: pointer;
+}
+.contacto__titulo {
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+.proyectos__tarjetas--descripcion {
+  margin-bottom: 30px;
+}
+.contacto__titulo {
+  font-size: 28px;
+}
+.perfil__navegacion--link:hover {
+  opacity: 0.5;
+}
+
+.contacto__iconos__redes:hover {
+  opacity: 0.5;
+}
+
+.proyectos__tarjetas--demo:hover {
+  opacity: 0.5;
+}
+.contacto__correo:hover {
+  opacity: 0.5;
+}
+/* TABLET */
+@media (max-width: 1023px) {
+  .contacto {
+    padding-top: 80px;
+    padding-bottom: 102px;
+  }
+  .container {
+    padding: 0 40px;
+  }
+  .perfil__nombre {
+    font-size: 58px;
+  }
+
+  .perfil__fotopersonal {
+    max-width: 216px;
+    object-fit: cover;
+    align-self: flex-start;
+  }
+
+  .habilidades__container {
+    gap: 40px;
+    justify-content: space-between;
+  }
+  .habilidades__titulo {
+    font-size: 40px;
+  }
+
+  .proyectos__container {
+    flex-direction: column;
+  }
+
+  .proyectos__tarjetas {
+    max-width: 100%;
+  }
+  .proyectos__titulo {
+    font-size: 40px;
+  }
+  .proyectos__tarjetas--titulo {
+    font-size: 24px;
+  }
+  .contacto__titulo {
+    font-size: 40px;
+  }
+}
+
+/* MÓVIL */
+@media (max-width: 767px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .perfil {
+    flex-direction: column;
+  }
+
+  .perfil__fotopersonal {
+    padding-top: 20px;
+    margin-top: 0;
+    width: 100%;
+    max-width: 100%;
+    height: 280px;
+    object-fit: cover;
+    order: -1;
+  }
+
+  .perfil__texto {
+    padding-top: 30px;
+  }
+
+  .perfil__nombre {
+    font-size: 36px;
+  }
+
+  .perfil__navegacion {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .habilidades__container {
+    gap: 53px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .habilidades__titulo {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    font-size: 28px;
+  }
+
+  .proyectos__tarjetas {
+    max-width: 100%;
+    width: 100%;
+  }
+  .proyectos__tarjetas__info {
+    padding: 20px;
+  }
+  .proyectos__titulo {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    font-size: 28px;
+  }
+  .perfil__puesto-lenguajes {
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  .perfil__navegacion--link {
+    display: inline-block;
+    background-size: 100% 5px;
+    width: fit-content;
+  }
+  .perfil__descripcion-perfil {
+    font-size: 16px;
+  }
+  .proyectos__tarjetas--titulo {
+    font-size: 20px;
+  }
+
+  .proyectos__tarjetas--descripcion {
+    font-size: 16px;
+  }
+  .proyectos__tarjetas--demo {
+    white-space: nowrap;
+    font-size: 16px;
+  }
+  .proyectos__tarjetas__links {
+    justify-content: space-between;
+  }
+  .contacto {
+    padding-top: 60px;
+    padding-bottom: 100px;
+  }
+  .contacto__imagen {
+    width: 24px;
+    height: 24px;
+  }
+  .contacto__iconos {
+    gap: 40px;
+  }
+  .proyectos__tarjetas--icono {
+    width: 20px;
+    height: 20px;
+  }
+  .habilidades__iconos--html,
+  .habilidades__iconos--css,
+  .habilidades__iconos--javascript,
+  .habilidades__iconos--git,
+  .habilidades__iconos--github,
+  .habilidades__iconos--chatgpt {
+    width: 30px;
+    height: 30px;
+  }
+}
